@@ -1,0 +1,20 @@
+* {
+  scroll-behavior: smooth;
+}
+.jumbotron {
+  text-align: center;
+  background-image: url("../IMG/banner.png");
+  background-position: 15%;
+  color: white;
+  border-radius: 0;
+}
+
+.TitleDivThing {
+  font-size: 2rem;
+}
+.container {
+  margin-bottom: 45px;
+}
+.card {
+  margin: 2rem;
+}

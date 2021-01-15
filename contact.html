@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Some META data about the webpage.-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Linus Romland" />
+    <meta name="description" content="Bootstrap Upg1" />
+
+    <title>Electronic Shop</title>
+
+    <!--Import of local JS & CSS-->
+    <link rel="stylesheet" href="CSS/header.css" />
+    <script src="JS/importHTML.js"></script>
+
+    <!--Import of BS4 & JQuery-->
+    <link rel="stylesheet" href="BS/css/bootstrap.css" />
+    <script src="./JS/JQuery.js"></script>
+    <script src="./BS/js/bootstrap.js"></script>
+  </head>
+
+  <body onload="includeHTML()">
+    <div include-html="./header.html"></div>
+
+    <div class="container"> <div class=" text-center mt-5 ">
+      <h1>Contact Us</h1>
+  </div>
+  <div class="row d-flex justify-content-center">
+      <div class="col-lg-7 mx-auto">
+          <div class="card mt-2 mx-auto p-4 bg-light">
+              <div class="card-body bg-light">
+                  <div class="container">
+                      <form id="contact-form" role="form">
+                          <div class="controls">
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <div class="form-group"> <label for="form_name">Name</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Your Name" required="required" data-error="Firstname is required."> </div>
+                                  </div>
+    
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Your Email" required="required" data-error="Valid email is required."> </div>
+                                  </div>
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <div class="form-group"> <label for="form_message">Message *</label> <textarea id="form_message" name="message" class="form-control" placeholder="Your Message" rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
+                                  </div>
+                                  <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Send"> </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  </body>
+</html>

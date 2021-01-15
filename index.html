@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Some META data about the webpage.-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Linus Romland" />
+    <meta name="description" content="Bootstrap Upg1" />
+
+    <title>Appliances Store</title>
+
+    <!--Import of BS4 & JQuery-->
+    <link rel="stylesheet" href="BS/css/bootstrap.css" />
+    <script src="./JS/JQuery.js"></script>
+    <script src="./BS/js/bootstrap.js"></script>
+
+    <!--Import of local JS & CSS-->
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <script src="JS/importHTML.js"></script>
+  </head>
+
+  <!--Body that runs onLoad includeHtml, the code that makes it possible to include html files with include-html tag-->
+
+  <body onload="includeHTML()">
+    <div include-html="./header.html"></div>
+
+  <script type="text/javascript">
+        $(window).on('load',function(){
+            $('#exampleModal').modal('show');
+        });
+    </script>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cookies</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>We use Cookies! Is this okay?</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Okay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <h1 class="display-4">Appliances Store</h1>
+      <p class="lead">All the appliances you need!</p>
+      <p>Everything from vaccum cleaners to cleaning products</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#LearnMore" role="button"
+          >Learn more</a
+        >
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row" id="LearnMore">
+        <div class="col-sm card">
+          <img class="card-img-top" src="./IMG/refrigeratorr.png" />
+          <p class="TitleDivThing text-center">Appliances</p>
+          <p class="text-center">
+            We offer all the appliances to your home! Refrigerators, Microwave
+            ovens, stoves and many other products. All products have the highest
+            quality for a great price. All products you buy from us come with a
+            72 month warranty!
+          </p>
+        </div>
+        <div class="col-sm card">
+          <img class="card-img-top" src="./IMG/cleaning.png" />
+          <p class="TitleDivThing text-center">Cleaning & Laundry</p>
+          <p class="text-center">
+            The store have workes ready at a days notice arrive at your house to
+            do your laundry and cleaning. We use industry best cleaning
+            products! We have options for all in all price categories!
+            Everything from a simple cleaing for US$ 5,99 to complete cleaning
+            and laundry for US$ 49,99!
+          </p>
+        </div>
+        <div class="col-sm card">
+          <img class="card-img-top" src="./IMG/aboutus.png" />
+          <p class="TitleDivThing text-center">About Us</p>
+          <p class="text-center">
+            The Appliances Store have been in the market for almost 25 years
+            today! We have the best customer services and offer great products &
+            Service! Our staff is always happy to help you find your next
+            purchase.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div include-html="./footer.html"></div>
+  </body>
+</html>
